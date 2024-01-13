@@ -40,8 +40,7 @@ class HomeViewController: UIViewController {
     
     
     private func configureNavbar() {
-        var image = UIImage(named: "netflix_logo")
-        image = image?.withRenderingMode(.alwaysOriginal)
+        let image = UIImage(named:"netflix_logo")
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: .done, target: self, action: nil)
         navigationItem.rightBarButtonItems = [
             UIBarButtonItem(image: UIImage(systemName: "person"), style: .done, target: self, action: nil),
